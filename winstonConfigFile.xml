@@ -1,0 +1,19 @@
+<winston>
+  <logFileDirectory directory="D:\AppDynamics\DotNetAgentConfig\Logs" />
+  <logFileFolderAccessPermissions defaultAccountsEnabled="false">
+    <account name="NT AUTHORITY\LOCAL SERVICE" displayName="LOCAL SERVICE" />
+    <account name="NT AUTHORITY\SYSTEM" displayName="SYSTEM" />
+    <account name="NT AUTHORITY\NETWORK SERVICE" displayName="NETWORK SERVICE" />
+    <account name="BUILTIN\IIS_IUSRS" displayName="ApplicationPool Identity" />
+  </logFileFolderAccessPermissions>
+  <appdynamics-agent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <controller host="CONTROLLER" port="443" ssl="true" enable_tls12="true">
+      <application name="APPLICATION" />
+      <account name="ACCOUNT" password="PASSWORD" />
+    </controller>
+    <machine-agent />
+    <app-agents>
+      <IIS />
+    </app-agents>
+  </appdynamics-agent>
+</winston>
